@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Book<span>Trade</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#livros">Livros</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>Troque seus livros usados</h1>
+        <p>Dê uma nova vida às suas histórias e descubra novas aventuras!</p> <button
+            onclick="window.location.href='#livros'">Ver livros</button>
+    </section>
+    <section id="livros">
+        <h2>Livros disponíveis</h2>
+        <div class="livros-container">
+            <div class="livro"> <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter">
+                <h3>Harry Potter e a Pedra Filosofal</h3>
+                <p>J.K. Rowling</p> <button
+                    onclick="window.location.href='livro.html?livro=harrypotter'">Trocar</button>
+            </div>
+            <div class="livro"> <img src="https://m.media-amazon.com/images/I/81af+MCATTL.jpg" alt="O Hobbit">
+                <h3>O Hobbit</h3>
+                <p>J.R.R. Tolkien</p> <button onclick="window.location.href='livro.html?livro=ohobbit'">Trocar</button>
+            </div>
+            <div class="livro"> <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg" alt="O Pequeno Príncipe">
+                <h3>O Pequeno Príncipe</h3>
+                <p>Antoine de Saint-Exupéry</p> <button
+                    onclick="window.location.href='livro.html?livro=pequenoprincipe'">Trocar</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

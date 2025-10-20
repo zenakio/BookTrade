@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #f7f7f7;
+    /* branco gelo */
+    color: #000000;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    /* branco puro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9e43;
+    /* cor de destaque */
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9e43;
+}
+
+/* --- Banner --- */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.banner p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #e0e0e0;
+}
+
+.banner button {
+    margin-top: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* --- Seção Livros --- */
+#livros {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    /* fundo gelo */
+}
+
+#livros h2 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.livros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.livro {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.livro:hover {
+    transform: translateY(-8px);
+}
+
+.livro img {
+    width: 100%;
+    border-radius: 8px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.livro h3 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #000000;
+}
+
+.livro p {
+    color: #555555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.livro button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.livro button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* --- Página de detalhes do livro --- */
+.descricao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descricao img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.descricao h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* --- Formulário --- */
+.formulario {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000;
+}
