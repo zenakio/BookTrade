@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troca de Livros</title>
+    <title>BookTrade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,34 +16,96 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#livros">Livros</a></li>
                 <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="index.html#Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <section class="banner">
         <h1>Troque seus livros usados</h1>
-        <p>Dê uma nova vida às suas histórias e descubra novas aventuras!</p> <button
-            onclick="window.location.href='#livros'">Ver livros</button>
+        <p>Dê uma nova vida às suas histórias e descubra novas aventuras!</p>
+        <button onclick="window.location.href='#livros'">Ver livros</button>
     </section>
     <section id="livros">
         <h2>Livros disponíveis</h2>
-        <div class="livros-container">
-            <div class="livro"> <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter">
-                <h3>Harry Potter e a Pedra Filosofal</h3>
-                <p>J.K. Rowling</p> <button
-                    onclick="window.location.href='livro.html?livro=harrypotter'">Trocar</button>
-            </div>
-            <div class="livro"> <img src="https://m.media-amazon.com/images/I/81af+MCATTL.jpg" alt="O Hobbit">
+        <a href="livro1.html">
+            <div class="livros-container">
+                <div class="livro"> <img
+                        src="https://m.media-amazon.com/images/I/81pB+joKL4L._UF1000,1000_QL80_.jpg"
+                        alt="Harry Potter">
+                    <h3>Harry Potter</h3>
+                    <p>J.K. Rowling</p>
+                    <button onclick="window.location.href='livro1.html'">Trocar</button>
+                </div>
+        </a>
+        <a href="livro2.html">
+            <div class="livro"> <img src="https://m.media-amazon.com/images/I/91M9xPIf10L.jpg" alt="O Hobbit">
                 <h3>O Hobbit</h3>
-                <p>J.R.R. Tolkien</p> <button onclick="window.location.href='livro.html?livro=ohobbit'">Trocar</button>
+                <p>J.R.R. Tolkien</p>
+                <button onclick="window.location.href='livro2.html'">Trocar</button>
             </div>
-            <div class="livro"> <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg" alt="O Pequeno Príncipe">
+        </a>
+        <a href="livro3.html">
+            <div class="livro"> <img src="https://cdn.awsli.com.br/2551/2551876/produto/24218453612267cdc2d.jpg" alt="O Pequeno Príncipe">
                 <h3>O Pequeno Príncipe</h3>
-                <p>Antoine de Saint-Exupéry</p> <button
-                    onclick="window.location.href='livro.html?livro=pequenoprincipe'">Trocar</button>
+                <p>Antoine de Saint-Exupéry</p>
+                <button onclick="window.location.href='livro3.html'">Trocar</button>
             </div>
+        </a>
         </div>
     </section>
+    <section id="sobre" class="products"><br>
+        <h2 class="section-title">Sobre Nós</h2><br>
+        <p class="sobre123">A BookTrade é uma empresa dedicada a incentivar a leitura e a sustentabilidade por meio da
+            troca de livros usados. Nosso objetivo é conectar leitores que desejam dar um novo destino às suas obras já
+            lidas, permitindo que cada livro ganhe uma nova história e continue inspirando outras pessoas. Acreditamos
+            que compartilhar conhecimento é uma das formas mais valiosas de aprendizado, e por isso criamos um espaço
+            acessível, simples e colaborativo, onde qualquer pessoa pode renovar sua estante sem precisar gastar muito.
+            Além de promover a economia circular, a BookTrade contribui para a preservação do meio ambiente ao reduzir o
+            descarte de materiais e estimular o reaproveitamento consciente. Aqui, cada troca é uma oportunidade de
+            descobrir novos autores, explorar diferentes gêneros literários e participar de uma comunidade apaixonada
+            por leitura.</p>
+    </section><br>
+
+    <section id="Contato" class="products">
+        <table>
+            <tr>
+                <td>UF:</td>
+                <td>Cidade:</td>
+                <td>Endereço:</td>
+                <td>Contato:</td>
+            </tr>
+            <tr>
+                <td>SC:</td>
+                <td>Trombudo Central</td>
+                <td>Av. 3 de elixir - 123 - Não é o centro</td>
+                <td>(45) 9375-1828</td>
+            </tr>
+            <tr>
+                <td>SP:</td>
+                <td>Gigilandia</td>
+                <td>Rua Giovanna Niger - 321 - É o centro</td>
+                <td>(49) 9375-1828</td>
+            </tr>
+            <tr>
+                <td>AC:</td>
+                <td>Rio Fernando</td>
+                <td>Av. Nefário - 231 - Também é o centro</td>
+                <td>(95) 9375-1828</td>
+            </tr>
+        </table>
+    </section>
 </body>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 BookTrade. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+            <a href="#">Contato</a>
+        </div>
+    </div>
+</footer>
 
 </html>

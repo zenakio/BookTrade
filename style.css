@@ -8,15 +8,18 @@
 
 /* Corpo */
 body {
-    background-color: #f7f7f7;
-    /* branco gelo */
+    background-color: #eeeeee;
     color: #000000;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #ffffff;
-    /* branco puro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,14 +29,14 @@ header {
 
 /* Logo */
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 span {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #ff9e43;
     /* cor de destaque */
@@ -51,7 +54,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -65,6 +68,8 @@ nav a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 2rem;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -105,8 +110,15 @@ nav a:hover {
 #livros {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f7f7f7;
-    /* fundo gelo */
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+  }
+
+livros:hover {
+    color: #ff9e43;
 }
 
 #livros h2 {
@@ -187,6 +199,7 @@ nav a:hover {
 .descricao img {
     width: 300px;
     border-radius: 10px;
+
 }
 
 .descricao h2 {
@@ -201,7 +214,7 @@ nav a:hover {
 
 /* --- Formulário --- */
 .formulario {
-    background-color: #f7f7f7;
+    background-color: #eeeeee;
     padding: 60px 20px;
     text-align: center;
 }
@@ -238,3 +251,133 @@ button[type="submit"]:hover {
     color: #000000;
     border: 1px solid #000;
 }
+
+/* Rodapé */
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-left: calc(-50vw + 50%);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #af8aeb88, transparent);
+    margin: 3rem auto 0;
+    width: 80%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Seção Contato sem fundo externo --- */
+#Contato {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0;
+    text-align: center;
+}
+
+#Contato h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Tabela estilizada --- */
+#Contato table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1d1d1d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#Contato td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Cabeçalho da tabela */
+#Contato tr:first-child td {
+    background-color: #493a3a;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Linhas alternadas */
+#Contato tr:nth-child(even) td {
+    background-color: #000000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    #Contato table,
+    #Contato tr,
+    #Contato td {
+        display: block;
+        width: 100%;
+    }
+
+    #Contato tr:first-child {
+        display: none;
+    }
+
+    #Contato tr:not(:first-child) {
+        margin-bottom: 1rem;
+        background: #000;
+        border-radius: 12px;
+        padding: 0.5rem;
+    }
+
+    #Contato td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 0.3rem;
+    }
+}
+
+.sobre123 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.products {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    text-align: justify;
+}
+

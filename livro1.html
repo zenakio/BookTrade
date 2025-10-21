@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harry Potter - Trocar Livro</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <div class="logo">Troca<span>Livros</span></div>
+    <div class="logo">Book<span>Trade</span></div>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#formulario">Trocar</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#livros">Livros</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
       </ul>
     </nav>
-  </header>
-
+    
+  </header><br><br><br><br><br>
   <section id="descricao-livro" class="descricao">
-    <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter">
+    <img src="https://m.media-amazon.com/images/I/81pB+joKL4L._UF1000,1000_QL80_.jpg" alt="Harry Potter">
     <div>
       <h2>Harry Potter e a Pedra Filosofal</h2>
       <p>J.K. Rowling</p>
-      <p>O jovem Harry Potter descobre aos 11 anos que é um bruxo e ingressa na Escola de Magia e Bruxaria de Hogwarts, onde faz amigos, enfrenta desafios e descobre segredos sobre seu passado.</p>
+      <p>O jovem Harry Potter descobre aos 11 anos que é um bruxo e ingressa na Escola de Magia e Bruxaria de Hogwarts,
+        onde faz amigos, enfrenta desafios e descobre segredos sobre seu passado.</p>
     </div>
   </section>
 
   <section id="formulario" class="formulario">
     <h2>Preencha para trocar este livro</h2>
-    <form>
+    <form><br>
       <label>Seu nome:</label>
-      <input type="text" required>
+      <input type="text" required placeholder="Seu nome aqui">
 
       <label>Email para contato:</label>
-      <input type="email" required>
+      <input type="email" required placeholder="Seu email aqui">
 
       <label>Livro que você quer oferecer:</label>
       <input type="text" placeholder="Título do seu livro" required>
@@ -45,13 +50,16 @@
     </form>
   </section>
   <footer>
-    <p>© 2025 TrocaLivros. Todos os direitos reservados.</p>
-    <p>
-        <a href="#">Início</a> | 
-        <a href="#livros">Livros</a> | 
+    <div class="footer-content">
+      <p>&copy; 2025 BookTrade. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
         <a href="#">Contato</a>
-    </p>
-</footer>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>

@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Pequeno Príncipe - Trocar Livro</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <div class="logo">Troca<span>Livros</span></div>
+    <div class="logo">Book<span>Trade</span></div>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#formulario">Trocar</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#livros">Livros</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
       </ul>
     </nav>
-  </header>
 
+  </header><br><br><br><br><br>
   <section id="descricao-livro" class="descricao">
-    <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg" alt="O Pequeno Príncipe">
+    <img src="https://cdn.awsli.com.br/2551/2551876/produto/24218453612267cdc2d.jpg" alt="O Pequeno Príncipe">
     <div>
       <h2>O Pequeno Príncipe</h2>
       <p>Antoine de Saint-Exupéry</p>
-      <p>Um piloto encontra um pequeno príncipe em pleno deserto, e juntos exploram temas profundos como amizade, amor e a essência da vida através de histórias e encontros com personagens simbólicos.</p>
+      <p>Um piloto encontra um pequeno príncipe em pleno deserto, e juntos exploram temas profundos como amizade, amor e
+        a essência da vida através de histórias e encontros com personagens simbólicos.</p>
     </div>
   </section>
 
   <section id="formulario" class="formulario">
     <h2>Preencha para trocar este livro</h2>
-    <form>
+    <form><br>
       <label>Seu nome:</label>
-      <input type="text" required>
+      <input type="text" required placeholder="Seu nome aqui">
 
       <label>Email para contato:</label>
-      <input type="email" required>
+      <input type="email" required placeholder="Seu email aqui">
 
       <label>Livro que você quer oferecer:</label>
       <input type="text" placeholder="Título do seu livro" required>
@@ -45,13 +50,16 @@
     </form>
   </section>
   <footer>
-    <p>© 2025 . Todos os direitos reservados.</p>
-    <p>
-        <a href="#">Início</a> | 
-        <a href="#livros">Livros</a> | 
+    <div class="footer-content">
+      <p>&copy; 2025 BookTrade. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
         <a href="#">Contato</a>
-    </p>
-</footer>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
